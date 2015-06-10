@@ -1,0 +1,32 @@
+form#aw_giftcard-form ul.form-list li div.input-box {
+    float: right;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+form#aw_giftcard-form ul.form-list li div.input-box label{
+    float: left;
+    padding-right: 5px;
+}
+
+form#aw_giftcard-form ul.form-list li div.input-box input{
+    float: right;
+}
+
+form#aw_giftcard-form ul.form-list li div.input-box label.required em {
+    position: static;
+}
+
+div#aw-giftcard-info-block table td.label {
+    width: 50px;
+}
+
+a.giftcard-btn-remove {
+    display: inline;
+    padding-right: 2px;
+    vertical-align: middle;
+}
+
+a.giftcard-btn-remove img {
+    vertical-align: middle;
+}

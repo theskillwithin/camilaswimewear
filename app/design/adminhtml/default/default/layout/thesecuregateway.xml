@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <thesecuregateway_adminhtml_thesecuregateway_index>
+        <reference name="content">
+            <block type="thesecuregateway/adminhtml_thesecuregateway" name="thesecuregateway" />
+        </reference>
+    </thesecuregateway_adminhtml_thesecuregateway_index>
+</layout>

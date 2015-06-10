@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecb_Ajaxcheckout>
+            <version>0.1.0</version>
+        </Ecb_Ajaxcheckout>
+    </modules>
+    <frontend>
+        <routers>
+            <ajaxcheckout>
+                <use>standard</use>
+                <args>
+                    <module>Ecb_Ajaxcheckout</module>
+                    <frontName>ajaxcheckout</frontName>
+                </args>
+            </ajaxcheckout>
+        </routers>
+
+        <layout>
+            <updates>
+                <ajaxcheckout>
+                    <file>ajaxcheckout.xml</file>
+                </ajaxcheckout>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <general>
+            <ajax_enabled>0</ajax_enabled>
+        </general>
+        <preview>
+            <preview_count>2</preview_count>
+        </preview>
+    </default>
+
+    <global>
+        <models>
+            <ajaxcheckout>
+                <class>Ecb_Ajaxcheckout_Model</class>
+            </ajaxcheckout>
+        </models>
+        <blocks>
+            <ajaxcheckout>
+                <class>Ecb_Ajaxcheckout_Block</class>
+            </ajaxcheckout>
+        </blocks>
+        <helpers>
+            <ajaxcheckout>
+                <class>Ecb_Ajaxcheckout_Helper</class>
+            </ajaxcheckout>
+        </helpers>
+    </global>
+</config>

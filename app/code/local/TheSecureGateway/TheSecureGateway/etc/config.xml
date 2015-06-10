@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   TheSecureGateway
+ * @package    TheSecureGateway_TheSecureGateway
+ * @author     ModuleCreator
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <TheSecureGateway_TheSecureGateway>
+            <version>1.0.0</version>
+        </TheSecureGateway_TheSecureGateway>
+    </modules>
+    <frontend>
+        <routers>
+            <thesecuregateway>
+                <use>standard</use>
+                <args>
+                    <module>TheSecureGateway_TheSecureGateway</module>
+                    <frontName>thesecuregateway</frontName>
+                </args>
+            </thesecuregateway>
+        </routers>
+        <layout>
+            <updates>
+                <thesecuregateway>
+                    <file>thesecuregateway.xml</file>
+                </thesecuregateway>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<thesecuregateway>
+				<use>admin</use>
+				<args>
+					<module>TheSecureGateway_TheSecureGateway</module>
+					<frontName>thesecuregateway</frontName>
+				</args>
+			</thesecuregateway>
+        </routers>
+    </admin>
+    <adminhtml>
+		<layout>
+			<updates>
+				<thesecuregateway>
+					<file>thesecuregateway.xml</file>
+				</thesecuregateway>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <thesecuregateway>
+                <class>TheSecureGateway_TheSecureGateway_Model</class>
+                <resourceModel>thesecuregateway_mysql4</resourceModel>
+            </thesecuregateway>
+            <thesecuregateway_mysql4>
+                <class>TheSecureGateway_TheSecureGateway_Model_Mysql4</class>
+                <entities>
+                    <thesecuregateway>
+                        <table>thesecuregateway</table>
+                    </thesecuregateway>
+                </entities>
+            </thesecuregateway_mysql4>
+        </models>
+        <resources>
+            <thesecuregateway_setup>
+                <setup>
+                    <module>TheSecureGateway_TheSecureGateway</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </thesecuregateway_setup>
+            <thesecuregateway_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </thesecuregateway_write>
+            <thesecuregateway_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </thesecuregateway_read>
+        </resources>
+        <blocks>
+            <thesecuregateway>
+                <class>TheSecureGateway_TheSecureGateway_Block</class>
+            </thesecuregateway>
+			<payment>  
+				<class>TheSecureGateway_TheSecureGateway_Block</class>  
+				<class>Mage_Payment_Block</class>  
+			</payment> 
+        </blocks>
+        <helpers>
+            <thesecuregateway>
+                <class>TheSecureGateway_TheSecureGateway_Helper</class>
+            </thesecuregateway>
+        </helpers>
+    </global>
+
+	<default>  
+		<payment>  
+			<thesecuregateway>  
+				<active>1</active> <!-- you might want to disable this! -->  
+				<model>thesecuregateway/payment</model>  
+				<order_status>1</order_status>  
+				<!-- you might increast the allowed credit cards by adding them as csv -->  
+				<title>Credit Card (TheSecureGateway)</title>
+				<cctypes>AE,VI,MC,DI</cctypes>
+				<useccv>1</useccv>
+				<debug>0</debug>
+				<allowspecific>0</allowspecific>  
+				<payment_action>authorize_capture</payment_action>
+			</thesecuregateway>  
+		</payment>  
+	</default> 
+
+</config>
+
+ 
+

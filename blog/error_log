@@ -1,0 +1,6 @@
+[20-Apr-2015 16:52:26 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /home/camilacpanel1/public_html/blog/wp-includes/update.php on line 295
+[29-May-2015 18:47:45 UTC] PHP Notice:  Trying to get property of non-object in /home/camilacpanel1/public_html/blog/wp-content/themes/pufferfish/index.php on line 53
+[29-May-2015 18:47:45 UTC] PHP Notice:  Trying to get property of non-object in /home/camilacpanel1/public_html/blog/wp-content/themes/pufferfish/index.php on line 53
+[29-May-2015 18:47:45 UTC] PHP Notice:  Trying to get property of non-object in /home/camilacpanel1/public_html/blog/wp-content/themes/pufferfish/index.php on line 53
+[29-May-2015 18:47:45 UTC] PHP Notice:  Trying to get property of non-object in /home/camilacpanel1/public_html/blog/wp-content/themes/pufferfish/index.php on line 53
+[29-May-2015 18:47:45 UTC] PHP Notice:  Trying to get property of non-object in /home/camilacpanel1/public_html/blog/wp-content/themes/pufferfish/index.php on line 53

@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Customizations for Camila Swimwear web site
+   ========================================================================== */
+
+/* custom paragraphs at home page bottom */
+
+@media only screen {
+  .home-bottom-pitch {
+    position: absolute;
+    font-size: smaller;
+    border-top: 1px solid #eee;/*#65c9d1;*/
+    border-bottom: 1px solid #eee;
+  }
+
+  .main-container {
+    min-height: 0px !important; /* change or remove when Recent Products Blocks are added */
+  }
+
+  .footer {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .home-bottom-pitch {
+    margin-top: 540px;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .footer address.copyright {
+    padding-top: 315px;
+    font-size: smaller;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+  .home-bottom-pitch {
+    margin-top: 540px;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .footer address.copyright {
+    padding-top: 270px;
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 0px;
+  }
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+  .home-bottom-pitch {
+    margin-top: 560px;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .footer address.copyright {
+    padding-top: 210px;
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .home-bottom-pitch {
+    margin-top: 220px;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .footer address.copyright {
+    padding-top: 200px;
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 0px;
+  }
+}
+
+
+@media only screen and (min-width: 760px) {
+  .home-bottom-pitch {
+    margin-top: 230px;
+  }
+  
+  .footer address.copyright {
+    padding-top: 175px;
+  }
+}
+
+@media only screen and (min-width: 800px) { 
+  .footer address.copyright {
+    padding-top: 140px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .home-bottom-pitch {
+    margin-top: 200px;
+  }
+  
+  .footer address.copyright {
+    padding-top: 130px;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+  .footer address.copyright {
+    padding-top: 115px;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .footer address.copyright {
+    padding-top: 110px;
+  }
+}
